@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" name="city" id="city" placeholder="Enter City ...">
+            <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="weather-data hidden">
+            <img id="weather-img" src="./images/clear.jpeg" alt="Weather Image">
+            <div class="city">
+                <h2 id="city-name">CITY</h2>
+                <h1 id="temp">_℃</h1>
+            </div>
+            <div class="otherdetails">
+                <div class="humidity">
+                    <h3>Humidity:</h3>
+                    <h2 id="humidity">_%</h2>
+                </div>
+                <div class="wind">
+                    <h3>Wind Speed:</h3>
+                    <h2 id="wind">_ km/hr</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

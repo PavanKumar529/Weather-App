@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(65, 64, 64);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%; /* Adjust the width for larger screens */
+    max-width: 600px; /* Set a maximum width to prevent the container from becoming too wide */
+    background-image: linear-gradient(to right, #33c561, #465d98);
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 20px;
+    row-gap: 40px;
+}
+
+.search-box {
+    display: flex;
+    width: 100%;
+    max-width: 400px; /* Set a maximum width for the search box */
+    margin-bottom: 20px;
+}
+
+.search-box > input {
+    flex: 1; /* Let the input grow to fill the available space */
+    height: 40px;
+    border-radius: 5px;
+    font-size: 18px; /* Adjust font size for smaller screens */
+}
+
+.search-box > input::placeholder {
+    color: red;
+}
+
+.search-box > button {
+    padding: 0 20px;
+    border-radius: 5px;
+    font-size: 16px; /* Adjust font size for smaller screens */
+    background-color: #01932f;
+    color: white;
+    cursor: pointer;
+}
+
+.search-box > button:hover {
+    background-color: rgb(133, 128, 128);
+    color: #ffffff;
+    border: 1px solid green;
+}
+
+.weather-data > img {
+    max-width: 100%; /* Ensure the image does not exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+}
+
+.weather-data {
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.city {
+    margin-top: 30px;
+}
+
+.otherdetails {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: center;
+    gap: 20px;
+}
+
+.humidity,
+.wind {
+    flex-basis: 50%; /* Each detail takes 50% of the available width */
+    max-width: 250px; /* Set a maximum width for better readability on larger screens */
+}
+
+.hidden {
+    display: none;
+}
